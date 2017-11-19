@@ -8,7 +8,6 @@ import { AppRoutingModule }     from './app-routing.module';
 import { AppComponent }         from './app.component';
 import { AboutComponent }   from './about/about.component';
 import { WorksComponent }   from './works/works.component';
-import { ResumeComponent }   from './resume/resume.component';
 import { ContactComponent }   from './contact/contact.component';
 
 
@@ -23,7 +22,6 @@ import { ContactComponent }   from './contact/contact.component';
     AppComponent,
     AboutComponent,
     WorksComponent,
-    ResumeComponent,
     ContactComponent
   ],
   bootstrap: [ AppComponent ]

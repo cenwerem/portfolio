@@ -1,5 +1,4 @@
-/* AppComponent's private CSS styles */
-h1 {
+/* h1 {
   font-size: 1.2em;
   color: #999;
   margin-bottom: 0;
@@ -9,15 +8,19 @@ h2 {
   margin-top: 0;
   padding-top: 0;
 }
-nav a {
-  padding: 5px 10px;
+nav {
+   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
   background-color: #eee;
   border-radius: 4px;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-nav a:visited, a:link {
+/* nav a:visited, a:link {
   color: #607D8B;
 }
 nav a:hover {
@@ -26,4 +29,4 @@ nav a:hover {
 }
 nav a.active {
   color: #039be5;
-}
+}  */

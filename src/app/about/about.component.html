@@ -1,16 +1,16 @@
-<h3>ABOUT</h3>
+<!-- <h3>{{aboutTitle}}</h3> -->
 <div>
-<h5>{{aboutMeIntro}}</h5>
-<h4>{{aboutMeIntermission}}</h4>
-<h5>{{aboutMeOutro}}</h5>
+    <h5>{{aboutMeIntro}}</h5>
+    <h4>{{aboutMeIntermission}}</h4>
+    <h5>{{aboutMeOutro}}</h5>
 </div>
 
-<div>
-    <div *ngFor="let skillSet of skills; let i = index">
-            <h4>{{skillSet.title}}</h4>
-            <div *ngFor="let skill of skillSet.value; let j = index">
-                <div>{{skill}}</div>
-            </div>
-        <br>   
-    </div>                
-</div>
+<ul *ngFor="let skillSet of skills; let i = index">
+    <h4>{{skillSet.title}}</h4>
+    <div>
+        <li *ngFor="let skill of skillSet.value; let j = index">
+            <p>{{skill}}</p>
+        </li>
+    </div>
+    <br>
+</ul>

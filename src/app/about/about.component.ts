@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './about.component.css' ]
 })
 export class AboutComponent {
+  aboutTitle = 'ABOUT';
   aboutMeIntro = 'My name is Chinonso Enwerem. Full Stack Developer with +4.5 years experience. Can design clean intuitive and responsive user interfaces using HTML and Javascript in Angular framework, while creating Java APIs in the back-end to service RESTful Webservice calls. I have a keen edge for empathic design and have thus conducted several successful A/B tests for product variations using Google Optimize.';
   aboutMeIntermission = 'But anyway the real about me...';
   aboutMeOutro = "I'm Chinny :) software developer in the tri state area. I love writing music when I'm not writing code. No I cannot sing but I may or may not move you to tears with my lyrics :) I'm ridiculed for being annoyingly keen on little details but that I feel comes with the profession. Sometimes when I sleep I'm RESTful.";

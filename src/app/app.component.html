@@ -1,8 +1,11 @@
-<h1>{{title}}</h1>
 <nav>
-  <a routerLink="/about">ABOUT</a>
-  <a routerLink="/work">WORKS</a>
-  <!-- <a routerLink="/resume">Resume</a> -->
-  <a routerLink="/contact">CONTACT</a>
+  <p>{{title}}</p>
+  <div>
+    <a [routerLinkActive]="['active']" routerLink="/about">ABOUT</a>
+    <a [routerLinkActive]="['active']" routerLink="/work">WORKS</a>
+    <a [routerLinkActive]="['active']" routerLink="/contact">CONTACT</a>
+</div>
 </nav>
+<div class="pageCenter">
 <router-outlet></router-outlet>
+</div>

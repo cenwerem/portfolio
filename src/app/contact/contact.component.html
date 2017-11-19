@@ -1,7 +1,16 @@
-<h3>CONTACT</h3>
+<!-- <h3>{{contactTitle}}</h3> -->
 <div>
-<h4>Email me: </h4><h4>{{emailAddress}}</h4>
-<a target="_blank" href="{{linkdInUrl}}">Linkedin</a>
-<p>I designed this portfolio using Angular 2. Source code on GitHub.</p>
-<a target="_blank" href="{{gitHubUrl}}">GitHub</a>
+<!-- <h4>{{emailAddress}}</h4> -->
+<div class="contactIcon">
+    <a target="_blank" href="mailto:{{emailAddress}}">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    </a>
+    <a target="_blank" href="{{linkdInUrl}}">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>        
+    </a>
+    <a target="_blank" href="{{gitHubUrl}}">
+        <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+</div>
+<p>{{gitHubText}}</p>
 </div>
