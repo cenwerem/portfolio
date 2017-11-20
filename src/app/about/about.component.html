@@ -1,8 +1,6 @@
-<!-- <h3>{{aboutTitle}}</h3> -->
-<div>
-    <h5>{{aboutMeIntro}}</h5>
-    <h4>{{aboutMeIntermission}}</h4>
-    <h5>{{aboutMeOutro}}</h5>
+<div (mouseenter)="toggleIntro(true)" (mouseleave)="toggleIntro(false)" class="fade">
+    <h5 [hidden]="showInformalIntro">{{formalIntro}}</h5>
+    <h5 [hidden]="!showInformalIntro">{{informalIntro}}</h5>
 </div>
 
 <ul *ngFor="let skillSet of skills; let i = index">

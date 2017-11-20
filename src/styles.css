@@ -11,9 +11,12 @@ h2, h3 {
 }
 html {
   height: 100%;
+  margin:0;
+  padding:0
 }
 body {
-  margin: 2em;
+  margin:0;
+  padding:0;
   background: linear-gradient(300deg, #9fe7ca, white, white);
   min-height: 100%;
 }
@@ -59,6 +62,10 @@ nav {
   justify-content: space-between;
 }
 
+nav p {
+  font-weight: 900;
+}
+
 nav div {
   margin-top: 16px;
 }
@@ -88,6 +95,14 @@ ul {
 li {
   display: inline-block;
   padding: 5px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;  
+  line-height: 0.1px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  color: white;  
+  background-color: #72d49d;
 }
 
 .pageCenter {
@@ -98,10 +113,12 @@ li {
 
 .contactIcon {
   font-size: 8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .contactIcon a {
-  padding: 20px;
+  padding: 0.2em;
 }
 
 a {
@@ -112,3 +129,35 @@ a {
 a:hover {
   color: #0abb77;
 }
+
+.experienceCard{
+  margin-top: 6em;
+}
+.experienceCard p {
+  font-style: italic;
+  margin-top: 0;
+}
+
+.experienceCard h4 {
+  margin-bottom: 0;
+  padding-bottom: 0.3em;
+}
+
+h5 {
+  margin-top: 4em;
+}
+
+.experienceSummary{
+  color: #888;
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  }
+/* 
+.fade:hover {
+     opacity: 0.5;
+} */

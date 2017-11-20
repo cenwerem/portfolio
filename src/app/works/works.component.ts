@@ -2,11 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-work',
-  templateUrl: './works.component.html',
-  styleUrls: [ './works.component.css' ]
+  templateUrl: './works.component.html'
 })
 export class WorksComponent {
-  worksTitle = 'WORKS';
   c1OaoRoles = [
   'AngularJS with HTML, SCSS, CSS and JavaScript for front end development.',
   'RESTful Webservice GETs and POSTs for API communications.',
@@ -35,19 +33,26 @@ export class WorksComponent {
       title: 'Full Stack Developer',
       summary: 'Front end and back end development of Online Account Opening web application',
       roles: this.c1OaoRoles,
-      Url: 'https://apply.capitalone.com'
+      Url: 'https://apply.capitalone.com',
+      showRoles: false
     },
     {
       application: 'SEI Investments, SEI Wealth Platform',
       title: 'Java/J2EE & PL/SQL Developer',
       summary: 'Front end and back end development of wealth-trading platform for banks and advisors',      
-      roles: this.seiSwpRoles
+      roles: this.seiSwpRoles,
+      showRoles: false
     },
     {
       application: 'SEI Investments, Fee Rebates',
       title: 'Java/J2EE & PL/SQL Developer',
       summary: 'Full stack development of internal web application for calculating and distributing rebates to customer firms',            
-      roles: this.seiFrRoles
+      roles: this.seiFrRoles,
+      showRoles: false
     }
   ];
+
+  toggleRoles(item){
+    this.experienceList[item].showRoles = !this.experienceList[item].showRoles;
+  }
 }

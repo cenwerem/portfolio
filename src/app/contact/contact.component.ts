@@ -2,12 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: [ './contact.component.css' ]
+  templateUrl: './contact.component.html'
 })
 export class ContactComponent {
-  contactTitle = 'CONTACT';
-  emailText = 'Email me: ';
   emailAddress = 'chinonso.enwerem@gmail.com';
   linkdInUrl = 'https://www.linkedin.com/in/cenwerem/';
   gitHubText = 'I designed this portfolio in Angular 2. Source code on GitHub.';
