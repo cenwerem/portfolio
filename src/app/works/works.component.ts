@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './works.component.html'
 })
 export class WorksComponent {
+  title = 'WORKS';
   c1OaoRoles = [
   'AngularJS with HTML, SCSS, CSS and JavaScript for front end development.',
   'RESTful Webservice GETs and POSTs for API communications.',

@@ -1,4 +1,4 @@
-<!-- <h3>{{worksTitle}}</h3> -->
+<h3>{{title}}</h3>
 <div class="experienceCard" >
     <div *ngFor="let experience of experienceList; let i = index">
         <a class="experienceSummary" (click)="toggleRoles(i)">
@@ -6,7 +6,6 @@
             <p>{{experience.title}}</p>
             <a [hidden]="!experience.showRoles"><i class="fa fa-chevron-up fade" aria-hidden="true"></i></a>
             <a [hidden]="experience.showRoles"><i class="fa fa-chevron-down fade" aria-hidden="true"></i></a>            
-            <!-- <p>{{experience.summary}}</p> -->
         </a>
         <div [hidden]="!experience.showRoles">
             <div [hidden]="!experience.Url">
@@ -14,7 +13,7 @@
                     <a target="_blank" href="{{experience.Url}}">{{experience.Url}}</a>
             </div>
             <div *ngFor="let role of experience.roles; let j = index">
-                <div>{{role}}</div>
+                <div class="customText">{{role}}</div>
             </div>
             <br>    
         </div>

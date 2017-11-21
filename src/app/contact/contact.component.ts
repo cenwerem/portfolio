@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './contact.component.html'
 })
 export class ContactComponent {
+  title = 'CONTACT';
   emailAddress = 'chinonso.enwerem@gmail.com';
   linkdInUrl = 'https://www.linkedin.com/in/cenwerem/';
   gitHubText = 'I designed this portfolio in Angular 2. Source code on GitHub.';

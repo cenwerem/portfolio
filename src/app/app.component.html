@@ -1,11 +1,12 @@
 <nav>
-  <p>{{title}}</p>
-  <div>
-    <a [routerLinkActive]="['active']" routerLink="/about">ABOUT</a>
-    <a [routerLinkActive]="['active']" routerLink="/work">WORKS</a>
-    <a [routerLinkActive]="['active']" routerLink="/contact">CONTACT</a>
-</div>
+  <p [innerHTML]="title"></p>
+  <div class="topnav" id="navBar">
+      <a href="javascript:void(0);" class="icon" (click)="toggleDropDown()"><i class="fa fa-bars" aria-hidden="true"></i></a>      
+      <a [routerLinkActive]="['active']" routerLink="/about" (click)="closeDropDown()">ABOUT</a>
+      <a [routerLinkActive]="['active']" routerLink="/work" (click)="closeDropDown()">WORKS</a>
+      <a [routerLinkActive]="['active']" routerLink="/contact" (click)="closeDropDown()">CONTACT</a>
+  </div>
 </nav>
 <div class="pageCenter">
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
