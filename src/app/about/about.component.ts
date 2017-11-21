@@ -29,7 +29,7 @@ export class AboutComponent {
       value: this.testingSkills
     },
     {
-      title: 'Front End',
+      title: 'Version Control',
       value: this.versioning
     },
     {
