@@ -199,10 +199,11 @@ h5 {
   }
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
-    /* position: absolute; */
     right: 0;
     top: 0;
     text-align: right;
+    width: fit-content;
+    margin-left: auto;
   }
   .topnav.responsive a {
     float: none;
@@ -212,8 +213,9 @@ h5 {
     color: #0abb77;
   }
   .topnav.responsive a:hover {
-    color: white;  
-    background-color: #72d49d;
+    color: #039b5e;      
+    /* color: white;   */
+    /* background-color: #72d49d; */
   }
   .contactIcon {
     margin-top: 0.4em;
